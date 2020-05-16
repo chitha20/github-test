@@ -1,4 +1,4 @@
-name: 'Kubernetes Chaos'
+name: 'testchaos'
 description: 'Different Chaos Experiment for Kubernetes'
 runs:
   using: 'docker'
