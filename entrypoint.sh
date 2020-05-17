@@ -8,9 +8,9 @@ echo "$KUBE_CONFIG_DATA" | base64 --decode > ${HOME}/.kube/config
 export KUBECONFIG=${HOME}/.kube/config
 
 ##Setup 
-export GOPATH=$HOME/go
-export PATH=$PATH:/usr/local/go/bin:$GOPATH/bin
+echo "$HOME"
 mkdir -p $HOME/go/src/github.com/mayadata-io
+ls
 cd ${GOPATH}/src/github.com/mayadata-io/
 dir=${GOPATH}/src/github.com/mayadata-io/chaos-ci-lib
 if [ ! -d $dir ]
